@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --ff-accent:'Fraunces' ,serif;
+    --ff-base:'Montserrat',sans-serif;
+    --fw-regular:500;
+    --fw-regular:700;
+}
+body{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color:var(--clr-neutral-400);
+    display:flex;
+    border-radius: 20px;
+    
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:var(--White);
+    border-radius:30px;
+    height:100%;
+    width:100%;
+    padding:20px;
+    margin:20px;
+
+}
+.container-image{
+    height:60vh;
+}
+.card-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    padding-left:20px;
+    height:70vh;
+    width:50vh;
+}
+
+.card-category{
+    padding-bottom: 10px;
+    font-family: var(--ff-accent);
+    color:var(--Dark-grayish-blue);
+
+}
+.product-details{
+    padding-bottom: 10px;
+    font-family: var(--ff-accent);
+    color:var(--Dark-grayish-blue);
+    padding-top:10px;
+}
+.price-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-discount-price{
+    color:var(--Dark-cyan);
+}
+.product-original-price{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:var(--Dark-grayish-blue);
+    text-decoration-line:line-through;
+}
+button{
+    background-color: var(--Dark-cyan);
+    border:none;
+    border-radius: 20px;
+    color:var(--White);
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding:8px;
+    text-align: center;
+    height:30px;
+    margin-top: 20px;
+}
+.mobile-image{
+    display:block;
+}
+
+@media (min-width:375px )and (max-width:1440px) {
+    .desktop-image{
+        height:40vh;
+        overflow: hidden;
+    }
+    .mobile-image{
+        display:none;
+    }
+}
+@media (max-width:375px){
+    .mobile-image{
+        height:40vh;
+        overflow: hidden;
+    }
+    .desktop-image{
+        display:none;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:auto;
+        height:60vh;
+       }
+}
